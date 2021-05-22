@@ -1,0 +1,40 @@
+{
+  "name": "back-end-idam-typescript-nodejs",
+  "version": "1.0.0",
+  "description": "back end server for identity access managment soluton",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "NODE_PATH=./build node build/index.js",
+    "build": "tsc -p .",
+    "dev": "nodemon src/main.ts",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenassiJosef/back-end-idam-typescript-nodejs.git"
+  },
+  "keywords": [
+    "idam",
+    "cognito",
+    "docker",
+    "aws",
+    "typescript",
+    "node.js",
+    "jest"
+  ],
+  "author": "Josef Benassi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenassiJosef/back-end-idam-typescript-nodejs/issues"
+  },
+  "homepage": "https://github.com/BenassiJosef/back-end-idam-typescript-nodejs#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
