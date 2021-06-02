@@ -2,11 +2,11 @@
   "name": "back-end-idam-typescript-nodejs",
   "version": "1.0.0",
   "description": "back end server for identity access managment soluton",
-  "main": "src/main.ts",
+  "main": "src/main.js",
   "scripts": {
-    "start": "NODE_PATH=./build node build/index.js",
+    "start": "node src/main.js",
     "build": "tsc -p .",
-    "dev": "nodemon src/main.ts",
+    "dev": "nodemon src/main.js",
     "test": "npm run test"
   },
   "repository": {

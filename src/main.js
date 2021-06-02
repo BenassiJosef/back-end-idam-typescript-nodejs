@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express')
 
 const app = express();
 
@@ -9,7 +9,7 @@ const datetime = "Pinged at: " + currentdate.getDate() + "/" +
   currentdate.getHours() + ":" +
   currentdate.getMinutes() + ":" +
   currentdate.getSeconds();
-  
+
 const body = {
   message: "Hello world, from IDAM Node api v1",
   date: datetime,
@@ -18,6 +18,10 @@ const body = {
 
 app.get('/ping', function (req, res) {
     res.send(JSON.stringify(body))
+})
+
+app.get('/', function (req, res) {
+    res.send("Home")
 })
 
 app.listen(8000, () => {
