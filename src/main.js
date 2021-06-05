@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 
 const currentdate = new Date();
-const datetime = "Pinged at: " + currentdate.getDate() + "/" +
+const datetime = "Pinged at clover smells: " + currentdate.getDate() + "/" +
   (currentdate.getMonth() + 1) + "/" +
   currentdate.getFullYear() + " @ " +
   currentdate.getHours() + ":" +
