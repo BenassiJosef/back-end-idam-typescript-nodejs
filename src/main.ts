@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 
 const currentdate = new Date();
-const datetime = "Pinged at clover smells: " + currentdate.getDate() + "/" +
+const datetime = "Pinged at cloveefefsfcr smells: " + currentdate.getDate() + "/" +
   (currentdate.getMonth() + 1) + "/" +
   currentdate.getFullYear() + " @ " +
   currentdate.getHours() + ":" +
@@ -16,11 +16,11 @@ const body = {
   status: 200,
 };
 
-app.get('/ping', function (req, res) {
+app.get('/ping', function (req:any, res:any) {
     res.send(JSON.stringify(body))
 })
 
-app.get('/', function (req, res) {
+app.get('/', function (req:any, res:any) {
     res.send("Home")
 })
 
