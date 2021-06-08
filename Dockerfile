@@ -8,15 +8,14 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+RUN npm ci
 
-# Bundle app source
+RUN npm install pm2 -g
+
 COPY . .
 
-FROM base as production
+RUN npx tsc -p ./tsconfig.json
 
-ENV NODE_PATH=./build
+EXPOSE 8000
 
-RUN npm run build
+CMD [ "pm2-runtime", "build/main.js" ]
