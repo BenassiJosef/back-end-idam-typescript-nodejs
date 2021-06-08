@@ -21,7 +21,7 @@ app.get('/ping', function (req:any, res:any) {
 })
 
 app.get('/', function (req:any, res:any) {
-    res.send("Home")
+    res.send("Home is joe")
 })
 
 app.listen(8000, () => {
