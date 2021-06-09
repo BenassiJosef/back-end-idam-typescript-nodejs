@@ -6,3 +6,7 @@ up-prod:
 
 down: 
     docker-compose down
+
+local-build:
+	docker-compose up --build --force-recreate --no-deps
+
