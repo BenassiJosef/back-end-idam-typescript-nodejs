@@ -12,7 +12,7 @@ const RegisterController = async (req:Request, res: Response) => {
 
         const { status, body } = await register(payload);
 
-        if (status && body) { res.status(status).send('Ok')} 
+        if (status && body) { res.status(status).send(body)} 
 
     } catch (error) {
         console.log("Error: ", error)

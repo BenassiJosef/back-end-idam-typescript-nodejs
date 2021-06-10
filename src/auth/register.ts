@@ -34,6 +34,7 @@ const register = async (payload: RegisterData): Promise<RegResponse> => {
 
   try {
     const response = await Cognito.signUp(newCognitoUser);
+    console.log({ status: response.$metadata.httpStatusCode, body: JSON.stringify(response.CodeDeliveryDetails) })
     return { status: response.$metadata.httpStatusCode, body: JSON.stringify(response.CodeDeliveryDetails) };
   } catch (error) {
     return { status: error.$metadata.httpStatusCode, body: error.name };
