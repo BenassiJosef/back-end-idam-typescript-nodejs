@@ -10,7 +10,7 @@ const Ping = (req:Request, res: Response) => {
         currentdate.getSeconds();
 
         const body = {
-        message: "Pinged! Daaaan And Coooooolin, from IDAM Node.js api v1",
+        message: "Pinged! Response from IDAM Node.js api v1",
         date: datetime,
         status: 200,
         };

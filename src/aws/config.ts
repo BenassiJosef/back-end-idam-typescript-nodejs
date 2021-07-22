@@ -5,3 +5,7 @@ export const Credentials = {
 export const Region = process.env.AWS_REGION || ""
 export const UserPoolId = process.env.AWS_USER_POOL_ID || "";
 export const ClientId = process.env.AWS_USER_POOL_CLIENT_ID || "";
+
+export function add(a:number,b:number){
+  return a + b
+}
